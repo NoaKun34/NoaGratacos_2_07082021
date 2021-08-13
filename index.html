@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <script src="https://kit.fontawesome.com/c0b0c0a604.js" crossorigin="anonymous"></script>
-        <title>Reservia</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <a id="logo">
-                <img src="img/logo/Reservia.svg" alt="Reservia Logo">
-            </a>
-            <nav>
-                <ul id="nav_menu">
-                    <li><a href="#host">Hébergements</a></li>
-                    <li><a href="#activity">Activités</a></li>
-                    <li><a id="sign" href="">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            
-            <div id="main_title">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2>En plein centre ville ou en pleine nature</h2>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/c0b0c0a604.js" crossorigin="anonymous"></script>
+    <title>Reservia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a id="logo">
+            <img src="img/logo/Reservia.svg" alt="Reservia Logo">
+        </a>
+        <nav>
+            <ul id="nav_menu">
+                <li><a href="#host">Hébergements</a></li>
+                <li><a href="#activity">Activités</a></li>
+                <li><a id="sign" href="">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="main_title">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
+        </div>
+
+        <form>
+
+            <!--SEARCH BAR-->
+            <div class="search">
+                <button class="location_button"><i class="fas fa-map-marker-alt ico"></i></button>
+                <input type="text" class="search_bar" placeholder="Marseille, France">
+                <form action="" id="search_button1">
+                <input type="submit" class="search_button" value="Rechercher">
+                </form>
             </div>
-            
-            <form>
-                
-                <!--SEARCH BAR-->
-                <div class="search">
-                    <button class="location_button"><i class="fas fa-map-marker-alt ico"></i></button>
-                    <input type="text" class="search_bar" placeholder="Marseille, France">
-                    <input type="submit" class="search_button" value="Rechercher">
-                </div>
 
-                <!--FILTERS-->
-                <div class="filters">
-                    <p id="filters_tiltle">Filtres</p>
-                    
-                    <div class="filters_list">
-                        
-                        <div class="eco">
-                            <button><i class="fas fa-money-bill-wave ico-filters"></i></button>
-                            <label>Économique</label>
-                        </div>
+            <!--FILTERS-->
+            <div class="filters">
+                <p id="filters_tiltle">Filtres</p>
 
-                        <div class="family">
-                            <button><i class="fas fa-child ico-filters"></i></button>
-                            <label>Familial</label>
-                        </div>
+                <div class="filters_list">
 
-                        <div class="romantic">
-                            <button><i class="fas fa-heart ico-filters"></i></button>
-                            <label>Romantique</label>
-                        </div>
-
-                        <div class="pet">
-                            <button><i class="fas fa-dog ico-filters"></i></button>
-                            <label>Animaux autorisés</label>
-                        </div>
-
+                    <div class="eco">
+                        <button><i class="fas fa-money-bill-wave ico-filters"></i></button>
+                        <label>Économique</label>
                     </div>
+
+                    <div class="family">
+                        <button><i class="fas fa-child ico-filters"></i></button>
+                        <label>Familial</label>
+                    </div>
+
+                    <div class="romantic">
+                        <button><i class="fas fa-heart ico-filters"></i></button>
+                        <label>Romantique</label>
+                    </div>
+
+                    <div class="pet">
+                        <button><i class="fas fa-dog ico-filters"></i></button>
+                        <label>Animaux autorisés</label>
+                    </div>
+
                 </div>
-            </form>
-
-            <div class="info">
-                <p><i class="fas fa-info ico-info"></i> Plus de 500 logements sont disponible dans cette ville</p>
             </div>
+        </form>
 
-            <!--HOST CARDS-->
-            <section class="hebergement" id="host">
-                <div class="host_list">
-                    <h1 class="section_title">Hébergements à Marseille</h1>
+        <div class="info">
+            <p><i class="fas fa-info ico-info"></i> Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
 
+        <!--HOST CARDS-->
+        <section class="hebergement" id="host">
+            <div class="host_list">
+                <h1 class="section_title">Hébergements à Marseille</h1>
+
+                <div class="hold_cards">
                     <div class="host_cards">
                         <a href="">
                             <img src="" alt="" class="host_img">
@@ -141,21 +146,6 @@
                     <div class="host_cards">
                         <a href="">
                             <img src="" alt="" class="host_img">
-                            <h3>Hôtel du port</h3>
-                            <h4>Nuit à partir de <b>52€</b></h4>
-                            <div class="ranking">
-                                <span class="blue_rank"><i class="fas fa-star ico"></i></span>
-                                <span class="blue_rank"><i class="fas fa-star ico"></i></span>
-                                <span class="blue_rank"><i class="fas fa-star ico"></i></span>
-                                <span class="blue_rank"><i class="fas fa-star ico"></i></span>
-                                <span class="blue_rank"><i class="fas fa-star ico"></i></span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="host_cards">
-                        <a href="">
-                            <img src="" alt="" class="host_img">
                             <h3>Hauberge Le Panier</h3>
                             <h4>Nuit à partir de <b>23€</b></h4>
                             <div class="ranking">
@@ -182,22 +172,24 @@
                             </div>
                         </a>
                     </div>
-
-                    <a href="" id="more_host">Afficher plus</a>
-
                 </div>
 
-                <!--MOST POPULAR CARDS-->
-                <div class="most_popular">
-                    <div class="most_popular_header">
-                        <h1 class="section_title">Les plus populaires</h1>
-                        <i class="fas fa-chart-line ico-card"></i>
-                    </div>
+                <a href="" id="more_host">Afficher plus</a>
+
+            </div>
+
+            <!--MOST POPULAR CARDS-->
+            <div class="most_popular">
+                <div class="most_popular_header">
+                    <h1 class="section_title">Les plus populaires</h1>
+                    <i class="fas fa-chart-line ico-card"></i>
                 </div>
+            </div>
 
-            </section>
+        </section>
 
-        </main>
+    </main>
 
-    </body>
+</body>
+
 </html>
