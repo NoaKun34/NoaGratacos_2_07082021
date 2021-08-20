@@ -89,7 +89,7 @@ form {
 
 .host_cards {
     flex: 30%;
-    border: solid 2px black;
+    border: solid 4px white;
     border-radius: 15px;
     width: 20%;
     height: 10%;
@@ -99,14 +99,28 @@ form {
     margin-left: 15px;
     display: flex;
     flex-direction: column;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+    background-color: white;
+}
+
+.host_cards h3 {
+    margin-left: 6px;
+}
+
+.host_cards h4 {
+    margin-left: 6px;
+}
+
+.ranking {
+    margin-left: 6px;
 }
 
 .host_cards img {
     width: 100%;
     height: 100%;
     flex: 55%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .most_popular {
@@ -119,6 +133,22 @@ form {
 
 .most_popular_header {
     display: flex;
+}
+
+.hold_most_popular_cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.most_popular_cards {
+    border: solid 2px white;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+    width: 85%;
+    height: 10%;
+    margin-left: 20px;
+    margin-top: 25px;
 }
 
 .hold_cards {
