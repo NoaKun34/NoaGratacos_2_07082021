@@ -91,9 +91,7 @@ form {
     flex: 30%;
     border: solid 4px white;
     border-radius: 15px;
-    width: 20%;
     height: 10%;
-    max-width: 20%;
     max-height: 10%;
     margin-top: 15px;
     margin-left: 15px;
@@ -101,6 +99,12 @@ form {
     flex-direction: column;
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
     background-color: white;
+}
+
+#host_img_1 {
+    background-image: no-repeat url('img/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    flex: 55%;
+    height: 150px;
 }
 
 .host_cards h3 {
@@ -117,7 +121,7 @@ form {
 
 .host_cards img {
     width: 100%;
-    height: 100%;
+    height: 150px;
     flex: 55%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -127,7 +131,6 @@ form {
     flex: 25%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-left: 25px;
     margin-left: 25px;
 }
 
@@ -138,6 +141,14 @@ form {
 .hold_most_popular_cards {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular_text_card {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    flex: 70%;
 }
 
 .most_popular_cards {
@@ -149,6 +160,19 @@ form {
     height: 10%;
     margin-left: 20px;
     margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.popular_img {
+    flex: 30%;
+    width: 10%;
+    height: 10%;
+}
+
+.most_popular_flex {
+    display: flex;
+    flex-direction: row;
 }
 
 .hold_cards {
@@ -166,6 +190,17 @@ form {
 }
 
 @media screen and (max-width: 600px) {
+    #sign {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .hebergement {
       flex-direction: column-reverse;
     }
