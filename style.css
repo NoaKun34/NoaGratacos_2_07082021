@@ -133,6 +133,8 @@ form {
     border-radius: 15px 15px 0px 0px;
 }
 
+
+/* POPULAR IMG STYLE */
 #popular_img_1 {
     background-image: url('img/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
     
@@ -249,9 +251,52 @@ form {
 
 /* ACTIVITY */
 
+.activities {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .activity_holds_cards {
     display: flex;
     flex-direction: row;
+}
+
+.activity_cards {
+    flex: 25%;
+    padding: 15px;
+}
+
+.activity_card {
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
+}
+
+.xl_card {
+    height: 400px;
+}
+
+.l_card {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.s_card {
+    height: 170px;
+    margin-top: 15px;
+}
+
+.activity_img_card {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.activity_title {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin: 0px;
 }
 
 #activity_1 {
@@ -259,8 +304,10 @@ form {
     height: 400px;
 }
 
-.activity_cards {
-    flex: 25%;
+#activity_img_1 {
+    background-image: url('img/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    height: 350px;
+    background-size: cover;
 }
 
 #activity_2 {
@@ -275,14 +322,32 @@ form {
     background-color: cyan;
 }
 
+#activity_img_2_1 {
+    background-image: url('img/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    background-size: cover;
+    height: 150px;
+}
+
 #activity_2_2 {
     flex: 30%;
     background-color: darkblue;
 }
 
+#activity_img_2_2 {
+    background-image: url('img/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    background-size: cover;
+    height: 120px;
+}
+
 #activity_3 {
     background-color: green;
     height: 400px;
+}
+
+#activity_img_3 {
+    background-image: url('img/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-size: cover;
+    height: 350px;
 }
 
 #activity_4 {
