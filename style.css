@@ -256,6 +256,11 @@ form {
     padding-bottom: 30px;
 }
 
+.activities a {
+    text-decoration: none;
+    color: black;
+}
+
 .activity_holds_cards {
     display: flex;
     flex-direction: row;
@@ -281,6 +286,16 @@ form {
     margin-bottom: 15px;
 }
 
+.m_card {
+    height: 200px;
+    margin-top: 15px;
+}
+
+.sm_card {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
 .s_card {
     height: 170px;
     margin-top: 15px;
@@ -292,15 +307,12 @@ form {
 
 .activity_title {
     font-size: 16px;
-    text-decoration: none;
-    color: black;
     padding-left: 10px;
     padding-top: 15px;
     margin: 0px;
 }
 
 #activity_1 {
-    background-color: red;
     height: 400px;
 }
 
@@ -311,7 +323,6 @@ form {
 }
 
 #activity_2 {
-    background-color: blue;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -319,7 +330,6 @@ form {
 
 #activity_2_1 {
     flex: 30%;
-    background-color: cyan;
 }
 
 #activity_img_2_1 {
@@ -330,7 +340,6 @@ form {
 
 #activity_2_2 {
     flex: 30%;
-    background-color: darkblue;
 }
 
 #activity_img_2_2 {
@@ -340,7 +349,6 @@ form {
 }
 
 #activity_3 {
-    background-color: green;
     height: 400px;
 }
 
@@ -351,8 +359,54 @@ form {
 }
 
 #activity_4 {
-    background-color: purple;
     height: 400px;
+}
+
+#activity_4_1 {
+    flex: 30%;
+}
+
+#activity_img_4_1 {
+    background-image: url('img/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    background-size: cover;
+    height: 150px;
+}
+
+#activity_4_2 {
+    flex: 30%;
+}
+
+#activity_img_4_2 {
+    background-image: url('img/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    background-size: cover;
+    height: 120px;
+}
+
+/* FOOTER */
+
+footer {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
