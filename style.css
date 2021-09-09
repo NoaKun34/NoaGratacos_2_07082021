@@ -14,9 +14,12 @@ h2 {
 
 body {
     font-family: "Raleway", sans-serif;
+    margin: 0px;
+}
+
+.page_padding {
     padding-left: 25px;
     padding-right: 25px;
-    margin: 0px;
 }
 
 /* ------HEADER------ */
@@ -336,6 +339,7 @@ form {
     background-image: url('img/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
     background-size: cover;
     height: 150px;
+    background-position: center;
 }
 
 #activity_2_2 {
@@ -391,9 +395,10 @@ footer {
 
 .footer {
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 500px;
     padding-top: 15px;
-    background-color: grey;
+    padding-bottom: 35px;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -410,6 +415,21 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
+
+
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #nav_menu li {
+        width: 100%;
+    }
+
+    .host_cards {
+        margin: 0px;
+    }
+
     #sign {
         position: absolute;
         top: 0px;
@@ -448,5 +468,73 @@ footer a {
         color: black;
         top: 1px;
         left: 1px;
+    }
+
+    .activity_holds_cards {
+        flex-direction: column;
+    }
+
+    .xl_card {
+        height: 200px;
+    }
+    
+    .l_card {
+        height: 200px;
+    }
+    
+    .m_card {
+        height: 200px;
+    }
+    
+    .sm_card {
+        height: 200px;
+    }
+    
+    .s_card {
+        height: 200px;
+    }
+
+    #activity_img_1 {
+        background-image: url('img/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+        height: 150px;
+        background-size: cover;
+    }
+
+    #activity_img_2_1 {
+        background-image: url('img/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+        background-size: cover;
+        height: 150px;
+    }
+    
+    #activity_img_2_2 {
+        background-image: url('img/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+        background-size: cover;
+        height: 150px;
+    }
+
+    #activity_img_3 {
+        background-image: url('img/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+        background-size: cover;
+        height: 150px;
+    }
+
+    #activity_img_4_1 {
+        background-image: url('img/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+        background-size: cover;
+        height: 150px;
+    }
+
+    #activity_img_4_2 {
+        background-image: url('img/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+        background-size: cover;
+        height: 150px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    li#li_sign {
+        display: none;
     }
   }
