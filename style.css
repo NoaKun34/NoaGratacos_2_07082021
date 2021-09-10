@@ -59,6 +59,10 @@ form {
     padding-top: 20px;
 }
 
+.search {
+    display: flex;
+}
+
 .location_button {
     background-color: #F2F2F2;
     padding: 15px;
@@ -201,8 +205,18 @@ form {
     border-radius: 15px 15px 0px 0px;
 }
 
+.more_host_button {
+    padding: 20px;
+}
+
 
 /* POPULAR IMG STYLE */
+
+.most_popular_header {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #popular_img_1 {
     background-image: url('img/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
     
@@ -456,17 +470,17 @@ form {
 footer {
     padding-left: 0px;
     padding-right: 0px;
+    background-color: lightgray;
 }
 
 .footer {
-    padding-left: 50px;
-    padding-right: 500px;
+    padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 35px;
-    background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80%;
 }
 
 .footer_list {
@@ -487,8 +501,14 @@ footer a {
         padding-right: 0px;
     }
 
+    #nav_menu {
+        padding-left: 0px;
+        width: 100%;
+    }
+
     #nav_menu li {
         width: 100%;
+        justify-content: center;
     }
 
     .host_cards {
@@ -499,6 +519,12 @@ footer a {
         position: absolute;
         top: 0px;
         right: 0px;
+        padding-right: 20px;
+        text-align: right;
+    }
+
+    #sign a {
+        width: 100%;
     }
 
     header {
@@ -601,5 +627,9 @@ footer a {
 
     li#li_sign {
         display: none;
+    }
+
+    .most_popular {
+        margin-left: 0px;
     }
   }
