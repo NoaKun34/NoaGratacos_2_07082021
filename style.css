@@ -53,21 +53,85 @@ nav{
     color: black;
 }
 
-/* ------CONTENT------ */
-
-#main_title {
-    padding-top: 20px;
-}
+/* SEARCH BAR & FILTERS */
 
 form {
     padding-top: 20px;
 }
 
-.ico_info {
-    border: solid 2px cyan;
-    border-radius: 30px;
-    height: 30px;
-    width: 30px;
+.location_button {
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 0px;
+    font-size: 14px;
+}
+
+.search_bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search_button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.filters {
+    padding-top: 30px;
+}
+
+.filter {
+    margin-right: 20px;
+    border: solid 1px black;
+}
+
+.button_filters {
+    background-color: #0065FC;
+    padding: 15px 15px 15px;
+    border-radius: 15px;   
+}
+
+.text_filter {
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.fa-info:before {
+    content: "\f129";
+    border: solid 2px #F2F2F2;
+    padding: 10px 15px 10px;
+    border-radius: 20px;
+    color: #0065FC;
+    font-size: 10px;
+}
+
+/* CONTENT */
+
+#main_title {
+    padding-top: 20px;
 }
 
 .hebergement a {
@@ -81,6 +145,7 @@ form {
 
 .hebergement {
     display: flex;
+    padding-top: 20px;
 }
 
 .host_list {
