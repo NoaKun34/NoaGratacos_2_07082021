@@ -7,6 +7,12 @@ h1 {
 }
 
 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+h3 {
     font-size: 16px;
     font-weight: normal;
     color: black;
@@ -46,11 +52,14 @@ nav{
     display: flex;
     justify-content: center;
     cursor: pointer;
-    border-top: solid 3px black;
 }
 #nav_menu a{
     text-decoration: none;
     color: black;
+}
+
+#host_link {
+    border-top: solid 3px #0065FC;
 }
 
 /* SEARCH BAR & FILTERS */
@@ -103,19 +112,29 @@ form {
     font-size: 14px;
 }
 
+#filters_title {
+    padding-right: 15px;
+}
+
 .filters {
     padding-top: 30px;
+}
+
+.ico-filters {
+    color: #0065FC;
 }
 
 .filter {
     margin-right: 20px;
     border: solid 1px black;
+    border-radius: 30px;
 }
 
 .button_filters {
-    background-color: #0065FC;
+    background-color: lightskyblue;
     padding: 15px 15px 15px;
-    border-radius: 15px;   
+    border-radius: 30px;  
+    border: 0px; 
 }
 
 .text_filter {
@@ -136,6 +155,10 @@ form {
 
 #main_title {
     padding-top: 20px;
+}
+
+#host_section_title {
+    padding-left: 20px;
 }
 
 .hebergement a {
@@ -214,7 +237,9 @@ form {
 
 .most_popular_header {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #popular_img_1 {
