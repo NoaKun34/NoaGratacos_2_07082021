@@ -6,6 +6,8 @@ h1 {
     color: black;
 }
 
+
+
 h2 {
     font-size: 24px;
     font-weight: bold;
@@ -189,7 +191,9 @@ form {
     height: 10%;
     max-height: 10%;
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
@@ -197,6 +201,11 @@ form {
 }
 
 /* HOST IMG STYLE */
+
+.host_text_card h3 {
+    font-weight: 800;
+}
+
 #host_img_1 {
     background-image: url('img/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
 }
@@ -226,10 +235,15 @@ form {
     height: 150px;
     background-size: cover;
     border-radius: 15px 15px 0px 0px;
+    background-position: center;
 }
 
 .more_host_button {
     padding: 20px;
+}
+
+#more_host {
+    font-weight: bold;
 }
 
 
@@ -414,6 +428,7 @@ form {
 
 .activity_title {
     font-size: 16px;
+    font-weight: bold;
     padding-left: 10px;
     padding-top: 15px;
     margin: 0px;
@@ -454,6 +469,7 @@ form {
     background-image: url('img/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
     background-size: cover;
     height: 120px;
+    background-position: center;
 }
 
 #activity_3 {
@@ -488,6 +504,7 @@ form {
     background-image: url('img/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
     background-size: cover;
     height: 120px;
+    background-position: center;
 }
 
 /* FOOTER */
