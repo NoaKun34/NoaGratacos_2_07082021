@@ -133,6 +133,12 @@ form {
     height: 15px;
 }
 
+.ico-filters:hover {
+    color: white;
+    width: 15px;
+    height: 15px;
+}
+
 .filter {
     margin-right: 20px;
     border: solid 1px black;
