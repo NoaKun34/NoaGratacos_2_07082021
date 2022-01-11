@@ -92,6 +92,7 @@ form {
     border-bottom-width: 1px;
     border-left-width: 0px;
     border-right-width: 0px;
+    border-color: lightgray;
 }
 
 ::placeholder {
@@ -114,6 +115,10 @@ form {
     font-size: 14px;
 }
 
+.search_ico {
+    display: none;
+}
+
 #filters_title {
     padding-right: 15px;
 }
@@ -124,6 +129,8 @@ form {
 
 .ico-filters {
     color: #0065FC;
+    width: 15px;
+    height: 15px;
 }
 
 .filter {
@@ -134,7 +141,7 @@ form {
 
 .button_filters {
     background-color: lightskyblue;
-    padding: 15px 15px 15px;
+    padding: 20px;
     border-radius: 30px;  
     border: 0px; 
 }
@@ -272,7 +279,7 @@ form {
 .popular_img_card {
     background-size: cover;
     border-radius: 15px 0px 0px 15px;
-    height: 150px;
+    height: 100%;
     flex: 35%;
 }
 
@@ -308,6 +315,8 @@ form {
     flex: 25%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 20px;
     margin-left: 25px;
 }
 
@@ -335,25 +344,15 @@ form {
     border-radius: 15px;
     background-color: white;
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
-    width: 85%;
-    height: 10%;
-    margin-left: 20px;
-    margin-top: 25px;
-    max-height: 200px;
-}
-
-.popular_img {
-    flex: 30%;
     width: 100%;
-    height: 120px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    height: 180px;
+    margin-top: 25px;
 }
 
 .most_popular_flex {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    height: 100%;
 }
 
 .hold_cards {
@@ -399,17 +398,17 @@ form {
 }
 
 .xl_card {
-    height: 400px;
+    height: 500px;
 }
 
 .l_card {
-    height: 200px;
+    height: 300px;
     margin-bottom: 15px;
 }
 
 .m_card {
-    height: 200px;
-    margin-top: 15px;
+    height: 270px;
+    margin-top: 30px;
 }
 
 .sm_card {
@@ -435,17 +434,17 @@ form {
 }
 
 #activity_1 {
-    height: 400px;
+    height: 500px;
 }
 
 #activity_img_1 {
     background-image: url('img/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    height: 350px;
+    height: 450px;
     background-size: cover;
 }
 
 #activity_2 {
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -457,7 +456,7 @@ form {
 #activity_img_2_1 {
     background-image: url('img/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
     background-size: cover;
-    height: 150px;
+    height: 250px;
     background-position: center;
 }
 
@@ -473,17 +472,17 @@ form {
 }
 
 #activity_3 {
-    height: 400px;
+    height: 500px;
 }
 
 #activity_img_3 {
     background-image: url('img/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
     background-size: cover;
-    height: 350px;
+    height: 450px;
 }
 
 #activity_4 {
-    height: 400px;
+    height: 500px;
 }
 
 #activity_4_1 {
@@ -503,14 +502,14 @@ form {
 #activity_img_4_2 {
     background-image: url('img/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
     background-size: cover;
-    height: 120px;
+    height: 220px;
     background-position: center;
 }
 
 /* FOOTER */
 
 footer {
-    padding-left: 0px;
+    padding-left: 20px;
     padding-right: 0px;
     background-color: lightgray;
 }
@@ -553,6 +552,23 @@ footer a {
         justify-content: center;
     }
 
+    .search_button {
+        display: none;
+    }
+
+    .search_ico {
+        background-color: #0065FC;
+        padding: 15px;
+        border-radius: 15px;
+        border: 0px;
+        font-size: 14px;
+        display: block;
+    }
+
+    .fa-search {
+        color: white;
+    }
+
     .host_cards {
         margin: 0px;
     }
@@ -582,8 +598,14 @@ footer a {
         flex: 100%;
     }
 
+    .host_cards {
+        margin: 15px;
+    }
+
     .most_popular {
         flex: 100%;
+        margin: 0px;
+        margin-bottom: 15px;
     }
 
     .host_cards {
@@ -591,7 +613,12 @@ footer a {
     }
 
     .filters {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filter {
+        margin: 10px;
     }
 
     #search_button1:after {
