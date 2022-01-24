@@ -30,11 +30,18 @@ body {
     padding-right: 25px;
 }
 
+main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 /* ------HEADER------ */
 
 header{
     display: flex;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #logo{
     padding-top: 5px;
@@ -58,6 +65,10 @@ nav{
 #nav_menu a{
     text-decoration: none;
     color: black;
+}
+
+#bottom_nav {
+    display: none;
 }
 
 #host_link {
@@ -133,20 +144,31 @@ form {
     height: 15px;
 }
 
-.ico-filters:hover {
-    color: white;
-    width: 15px;
-    height: 15px;
-}
-
 .filter {
     margin-right: 20px;
-    border: solid 1px black;
+    border: solid 2px lightgray;
+    border-left: 0px;
     border-radius: 30px;
 }
 
+.filter:hover {
+    border-color: #0065FC
+}
+
+.filter:hover .button_filters {
+    background-color: #0065FC;
+}
+
+.filter:hover .text_filter {
+    color: #0065FC;
+}
+
+.filter:hover .ico-filters {
+    color: white;
+}
+
 .button_filters {
-    background-color: lightskyblue;
+    background-color: #DEEBFF;
     padding: 20px;
     border-radius: 30px;  
     border: 0px; 
@@ -155,6 +177,16 @@ form {
 .text_filter {
     padding-left: 10px;
     padding-right: 10px; 
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.ico_info {
+    padding-top: 15px;
+    padding-right: 10px;
 }
 
 .fa-info:before {
@@ -182,7 +214,11 @@ form {
 }
 
 .blue_rank {
-    color: blue;
+    color: #0065FC;
+}
+
+.grey_rank {
+    color: #F2F2F2;
 }
 
 .hebergement {
@@ -219,36 +255,12 @@ form {
     font-weight: 800;
 }
 
-#host_img_1 {
-    background-image: url('img/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-}
-
-#host_img_2 {
-    background-image: url('img/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-}
-
-#host_img_3 {
-    background-image: url('img/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-}
-
-#host_img_4 {
-    background-image: url('img/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-}
-
-#host_img_5 {
-    background-image: url('img/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-}
-
-#host_img_6 {
-    background-image: url('img/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-}
-
 .host_img_card {
     flex: 55%;
     height: 150px;
-    background-size: cover;
     border-radius: 15px 15px 0px 0px;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 .more_host_button {
@@ -269,24 +281,19 @@ form {
     padding-right: 20px;
 }
 
-#popular_img_1 {
-    background-image: url('img/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-    
-}
-
-#popular_img_2 {
-    background-image: url('img/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg');
-}
-
-#popular_img_3 {
-    background-image: url('img/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-}
-
 .popular_img_card {
-    background-size: cover;
     border-radius: 15px 0px 0px 15px;
     height: 100%;
+    width: 35%;
     flex: 35%;
+}
+
+.popular_img_card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .popular_text_title h3, .popular_text_title h4{
@@ -427,8 +434,24 @@ form {
     margin-top: 15px;
 }
 
+/*
 .activity_img_card {
     border-radius: 15px 15px 0px 0px;
+}*/
+
+.popular_img_card {
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    width: 35%;
+    flex: 35%;
+}
+
+.activity_img_card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .activity_title {
@@ -442,6 +465,62 @@ form {
 #activity_1 {
     height: 500px;
 }
+
+#activity_img_1 {
+    height: 450px;
+}
+
+#activity_2 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#activity_2_1 {
+    flex: 30%;
+}
+
+#activity_img_2_1 {
+    height: 250px;
+}
+
+#activity_2_2 {
+    flex: 30%;
+}
+
+#activity_img_2_2 {
+    height: 120px;
+}
+
+#activity_3 {
+    height: 500px;
+}
+
+#activity_img_3 {
+    height: 450px;
+}
+
+#activity_4 {
+    height: 500px;
+}
+
+#activity_4_1 {
+    flex: 30%;
+}
+
+#activity_img_4_1 {
+    height: 150px;
+}
+
+#activity_4_2 {
+    flex: 30%;
+}
+
+#activity_img_4_2 {
+    height: 220px;
+}
+
+/*
 
 #activity_img_1 {
     background-image: url('img/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
@@ -511,13 +590,14 @@ form {
     height: 220px;
     background-position: center;
 }
+*/
 
 /* FOOTER */
 
 footer {
     padding-left: 20px;
     padding-right: 0px;
-    background-color: lightgray;
+    background-color: #F2F2F2;
 }
 
 .footer {
@@ -548,6 +628,10 @@ footer a {
         padding-right: 0px;
     }
 
+    #logo {
+        padding-left: 25px;
+    }
+
     #nav_menu {
         padding-left: 0px;
         width: 100%;
@@ -556,6 +640,32 @@ footer a {
     #nav_menu li {
         width: 100%;
         justify-content: center;
+    }
+
+    .host_list {
+        background-color: white;
+        border: 0px;
+    }
+
+    #host_link {
+        border-top: 0px;
+    }
+    
+    #bottom_nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    #bottom_nav_1 {
+        flex: 50%;
+        border-top: solid 3px #0065FC;
+    }
+
+    #bottom_nav_2 {
+        flex: 50%;
+        border-top: solid 3px #F2F2F2;
     }
 
     .search_button {
@@ -585,6 +695,10 @@ footer a {
         right: 0px;
         padding-right: 20px;
         text-align: right;
+    }
+
+    .ico_info {
+        padding-top: 15px;
     }
 
     #sign a {
@@ -661,38 +775,26 @@ footer a {
     }
 
     #activity_img_1 {
-        background-image: url('img/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
         height: 150px;
-        background-size: cover;
     }
 
     #activity_img_2_1 {
-        background-image: url('img/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-        background-size: cover;
         height: 150px;
     }
     
     #activity_img_2_2 {
-        background-image: url('img/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-        background-size: cover;
         height: 150px;
     }
 
     #activity_img_3 {
-        background-image: url('img/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-        background-size: cover;
         height: 150px;
     }
 
     #activity_img_4_1 {
-        background-image: url('img/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-        background-size: cover;
         height: 150px;
     }
 
     #activity_img_4_2 {
-        background-image: url('img/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-        background-size: cover;
         height: 150px;
     }
 
@@ -708,3 +810,20 @@ footer a {
         margin-left: 0px;
     }
   }
+
+@media screen and (max-width: 992px) {
+    
+    .hebergement {
+        flex-direction: column;
+    }
+    
+    .host_list {
+        flex: 100%;
+    }
+
+    .most_popular {
+        flex: 100%;
+        margin: 0px;
+        padding-top: 15px;
+    }
+}
